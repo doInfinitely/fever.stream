@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · fever.stream</title>
+<meta name="description" content="What fever.stream and the fever app do and don't collect.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E0C0B">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+html{background:#0E0C0B} body{margin:0;-webkit-font-smoothing:antialiased;background:#0E0C0B;color:#F3EDE6;font-family:'Space Grotesk',sans-serif;font-weight:500}
+a{color:#F3EDE6} a:hover{color:#FF4A2B}
+main{max-width:720px;margin:0 auto;padding:24px 24px 80px;box-sizing:border-box}
+nav{max-width:720px;margin:0 auto;padding:24px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px}
+h1{font-size:clamp(34px,6vw,52px);font-weight:700;letter-spacing:-0.04em;line-height:1;margin:16px 0 8px}
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:36px 0 8px}
+p,li{font-size:17px;line-height:1.55;color:#C9C0B8} li{margin:4px 0}
+.date{color:#9A918A;font-size:14px;letter-spacing:0.08em;text-transform:uppercase}
+footer{border-top:1px solid #2A2522} footer div{max-width:720px;margin:0 auto;padding:24px;display:flex;flex-wrap:wrap;gap:20px;font-size:14px;color:#9A918A} footer a{color:#9A918A;text-decoration:none}
+</style>
+</head>
+<body>
+<nav><a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none"><svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="#F3EDE6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30 H16 L23 8 L30 38 L35 26 H58" stroke="#FF4A2B"></path><path d="M6 44 H48"></path><path d="M6 58 H34"></path></svg><span style="font-size:20px;font-weight:700;letter-spacing:-0.04em">fever<span style="color:#FF4A2B">.</span><span style="font-weight:500;color:#A89F97">stream</span></span></a><a href="/" style="font-size:15px;text-decoration:none">Back to the site</a></nav>
+<main>
+<div class="date">Last updated 8 November 2026</div>
+<h1>Privacy</h1>
+
+<p>fever is a Mac app that shows the Twitch chats you follow in one feed and writes what streamers say into it, on your own computer. The short version: the app works locally, we run no servers that see your data, and this site has no analytics or cookies.</p>
+
+<h2>This website</h2>
+<p>fever.stream is a static site hosted on GitHub Pages. It sets no cookies and runs no analytics. GitHub may keep standard server logs (IP address, browser, pages requested) under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Fonts load from Google Fonts, which sees the request for the font files. If you email us, we keep the email to answer it.</p>
+
+<h2>Buying a license</h2>
+<p>Purchases are handled by Lemon Squeezy, the merchant of record. They process your payment and collect what they need for that (name, email, billing country, payment details) under <a href="https://www.lemonsqueezy.com/privacy">their privacy policy</a>. We receive the email address you bought with and your license key so we can support you and honor refunds. We never see card numbers.</p>
+
+<h2>The fever app</h2>
+<ul>
+<li><strong>Twitch sign-in.</strong> You sign in with Twitch's own device-code login. The token Twitch gives the app is stored only on your Mac and is used to read chat, send the messages you type, and look up channels. We never receive it.</li>
+<li><strong>Streams and audio.</strong> Each transcribed stream plays in Twitch's official embedded player inside the app, so Twitch sees you as a viewer exactly as it would in a browser, under <a href="https://www.twitch.tv/p/legal/privacy-notice/">Twitch's privacy notice</a>. The audio is transcribed on your Mac. Transcripts and replay clips live in memory on your machine and are gone when you quit. Nothing is uploaded anywhere.</li>
+<li><strong>License check.</strong> If you enter a license key, the app sends that key and a random instance id to Lemon Squeezy to activate it, and re-checks about once a day. That is the only network call the app makes to anything other than Twitch.</li>
+<li><strong>Phone pairing.</strong> The phone app talks directly to your Mac over your network using a token your Mac generates. There is no account with us and no relay we operate.</li>
+<li><strong>No telemetry.</strong> The app has no crash reporting, analytics, or usage tracking. Logs stay in ~/Library/Logs/fever on your Mac; you can send them to us if you want help.</li>
+</ul>
+
+<h2>Your choices</h2>
+<p>Everything the app stores is in your home folder and can be deleted by removing the app and its support folders. To delete the purchase record Lemon Squeezy holds, or ours, email <a href="mailto:hello@fever.stream">hello@fever.stream</a>.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes we will update this page and the date above. Questions: <a href="mailto:hello@fever.stream">hello@fever.stream</a>.</p>
+
+</main>
+<footer><div><span>Not affiliated with Twitch.</span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:hello@fever.stream">hello@fever.stream</a></div></footer>
+</body>
+</html>

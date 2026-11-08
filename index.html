@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fever.stream · a Twitch client you read</title>
+<meta name="description" content="Every chat you follow in one feed, with what the streamers say written into it live, each speaker named. Click a line to hear it again. Mac app, pay once.">
+<meta property="og:title" content="fever.stream">
+<meta property="og:description" content="Some of us are here just to chat. A Twitch client you read.">
+<meta property="og:image" content="https://fever.stream/og.png">
+<meta property="og:url" content="https://fever.stream/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://fever.stream/">
+<meta name="theme-color" content="#0E0C0B">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+html{background:#0E0C0B} body{margin:0;-webkit-font-smoothing:antialiased}
+a{color:#F3EDE6} a:hover{color:#FF4A2B}
+@media (max-width: 720px) { nav > div:last-child { font-size: 14px; gap: 16px } }
+</style>
+</head>
+<body>
+<div style="background: #0E0C0B; color: #F3EDE6; font-family: 'Space Grotesk', sans-serif; display: flex; flex-direction: column; align-items: stretch">
+
+  <nav style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 24px 24px">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #F3EDE6">
+      <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="#F3EDE6" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 30 H16 L23 8 L30 38 L35 26 H58" stroke="#FF4A2B"></path>
+        <path d="M6 44 H48"></path>
+        <path d="M6 58 H34"></path>
+      </svg>
+      <span style="font-size: 22px; font-weight: 700; letter-spacing: -0.04em">fever<span style="color: #FF4A2B">.</span><span style="font-weight: 500; color: #A89F97">stream</span></span>
+    </a>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+      <a href="#how" style="text-decoration: none">How it works</a>
+      <a href="#pricing" style="text-decoration: none">Pricing</a>
+      <a href="#faq" style="text-decoration: none">FAQ</a>
+      <a href="mailto:hello@fever.stream?subject=fever%20for%20Mac%3A%20tell%20me%20when%20it%20launches" style="text-decoration: none; color: #0E0C0B; background: #F3EDE6; padding: 10px 16px; border-radius: 999px">Get notified</a>
+    </div>
+  </nav>
+
+  <section id="top" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 64px 24px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+    <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A918A">A Twitch client you read</div>
+      <h1 style="margin: 0; font-size: clamp(44px, 6vw, 84px); font-weight: 700; letter-spacing: -0.05em; line-height: 0.98">Some of us are here just to <span style="color: #FF4A2B">chat</span>.</h1>
+      <p style="margin: 0; font-size: 20px; line-height: 1.45; color: #A89F97; max-width: 520px">Every chat you follow in one feed, with what the streamers say written into it live, each speaker named. Click a line to hear it again.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+        <a href="mailto:hello@fever.stream?subject=fever%20for%20Mac%3A%20tell%20me%20when%20it%20launches" style="text-decoration: none; color: #0E0C0B; background: #FF4A2B; padding: 16px 24px; border-radius: 999px; font-weight: 700; font-size: 17px">Tell me when it launches</a>
+        <a href="#pricing" style="text-decoration: none; color: #F3EDE6; border: 1px solid #2A2522; padding: 15px 24px; border-radius: 999px; font-weight: 500; font-size: 17px">See pricing</a>
+      </div>
+      <div style="font-size: 14px; color: #8A817A">Launching soon for macOS on Apple Silicon. Windows and Linux after. Phone app pairs free.</div>
+    </div>
+
+    <div style="flex: 1 1 480px; min-width: 0; max-width: 580px; background: #141110; border: 1px solid #2A2522; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 40px 80px rgba(0,0,0,0.45)">
+      <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #2A2522; background: #0E0C0B">
+        <div style="display: flex; gap: 7px" aria-hidden="true">
+          <span style="width: 11px; height: 11px; border-radius: 999px; background: #3A332E; display: block"></span>
+          <span style="width: 11px; height: 11px; border-radius: 999px; background: #3A332E; display: block"></span>
+          <span style="width: 11px; height: 11px; border-radius: 999px; background: #3A332E; display: block"></span>
+        </div>
+        <div style="flex: 1; text-align: center; font-size: 13px; color: #9A918A; font-weight: 500">league night <span style="color: #5C544E">·</span> 3 channels <span style="color: #5C544E">·</span> 1,464 chatting</div>
+        <div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #FF4A2B; font-weight: 700"><span style="width: 7px; height: 7px; border-radius: 999px; background: #FF4A2B; display: block"></span>LIVE</div>
+      </div>
+
+      <div style="display: flex; align-items: stretch; min-height: 0">
+        <div style="width: 60px; flex: none; border-right: 1px solid #2A2522; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 14px 0; background: #0E0C0B">
+          <div style="width: 36px; height: 36px; border-radius: 12px; background: #F3EDE6; display: flex; align-items: center; justify-content: center" aria-label="Home">
+            <svg width="18" height="18" viewBox="0 0 64 64" fill="none" stroke="#0E0C0B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 28 H16 L23 6 L30 38 L35 24 H58" stroke="#FF4A2B"></path><path d="M6 54 H40"></path></svg>
+          </div>
+          <div style="width: 22px; height: 1px; background: #2A2522"></div>
+          <div style="width: 36px; height: 36px; border-radius: 999px; background: #2A2522; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #F3EDE6; outline: 2px solid #F3EDE6; outline-offset: 2px">n</div>
+          <div style="width: 36px; height: 36px; border-radius: 999px; background: #22303A; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #9FC2D6">t</div>
+          <div style="width: 36px; height: 36px; border-radius: 999px; background: #2E2434; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #C9A6DE">k</div>
+          <div style="width: 36px; height: 36px; border-radius: 999px; border: 1px dashed #4A423D; display: flex; align-items: center; justify-content: center; color: #6B625B; font-size: 18px; line-height: 1">+</div>
+        </div>
+
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; font-size: 14px; line-height: 1.4; padding: 10px 0 0">
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #FBFBFB">Flawless</span> <span style="color: #C9C0B8">big foot over here</span></span>
+          </div>
+
+          <div style="margin: 4px 10px; border-radius: 12px; background: #221A17; position: relative; overflow: hidden">
+            <div style="display: flex; gap: 10px; align-items: flex-start; padding: 10px 10px 12px">
+              <button type="button" aria-label="Stop replay" style="flex: none; width: 30px; height: 30px; border-radius: 8px; background: #FF4A2B; border: 0; display: flex; align-items: center; justify-content: center; margin-top: 1px; cursor: pointer">
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><rect x="1" y="1" width="10" height="10" rx="2" fill="#0E0C0B"></rect></svg>
+              </button>
+              <div style="min-width: 0; display: flex; flex-direction: column; gap: 2px">
+                <div style="display: flex; gap: 8px; align-items: baseline">
+                  <span style="font-weight: 700; color: #F3EDE6">nudleduck</span>
+                  <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #FF4A2B">voice</span>
+                  <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B">5:40:12</span>
+                </div>
+                <div style="font-size: 17px; font-weight: 500; color: #F3EDE6; letter-spacing: -0.01em">This is my right pinky toe.</div>
+                <div style="font-size: 12px; color: #9A918A">replaying · 0:02 of 0:04</div>
+              </div>
+            </div>
+            <div style="position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: #2A2522"></div>
+            <div style="position: absolute; left: 0; bottom: 0; height: 3px; width: 46%; background: #FF4A2B"></div>
+          </div>
+
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #FF6B6B">bunbaobui</span> <span style="color: #C9C0B8">we found big FOT</span></span>
+          </div>
+
+          <div style="display: flex; gap: 10px; align-items: flex-start; padding: 6px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none; padding-top: 3px">2:17</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#9A918A" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="M2 8v1M5 5v6M8 3v10M11 6v4M14 7v2"></path></svg>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #F3EDE6">nudleduck</span> <span style="color: #F3EDE6">Okay, you guys are… you guys are insane.</span> <span style="font-size: 11px; color: #6B625B">▶ replay</span></span>
+          </div>
+
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #FBFBFB">Flawless</span> <span style="color: #C9C0B8">LMAOOO</span></span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #FF6B6B">bunbaobui</span> <span style="color: #C9C0B8">THATS A BIG TOE</span></span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #B98BFF">wmelon_w</span> <span style="color: #C9C0B8">DAMNNNNNN</span></span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #B98BFF">Tears_0f_sin</span> <span style="color: #C9C0B8">THAT IS NOT A PINKY TOE</span></span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:17</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #B98BFF">Tears_0f_sin</span> <span style="color: #C9C0B8">YOU'RE LYING</span></span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:18</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #FF99CC">yoshuv</span> <span style="color: #C9C0B8">Shes gaslighting us</span></span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: baseline; padding: 5px 16px 10px">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B625B; width: 30px; flex: none">2:18</span>
+            <span style="font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9A918A; border: 1px solid #2A2522; border-radius: 6px; padding: 1px 5px; flex: none">nudle</span>
+            <span style="min-width: 0"><span style="font-weight: 700; color: #7D8CFF">aereaux</span> <span style="color: #C9C0B8">What in the world did i tune into</span></span>
+          </div>
+
+          <div style="margin: auto 10px 10px; display: flex; align-items: center; gap: 8px; border: 1px solid #2A2522; border-radius: 12px; padding: 6px 6px 6px 6px; background: #0E0C0B">
+            <button type="button" style="flex: none; display: flex; align-items: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 700; color: #F3EDE6; background: #2A2522; border: 0; border-radius: 8px; padding: 6px 10px; cursor: pointer">
+              nudleduck
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#9A918A" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2 4l3 3 3-3"></path></svg>
+            </button>
+            <label for="hero-reply" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Reply</label>
+            <input id="hero-reply" type="text" placeholder="reply into nudleduck's chat" style="flex: 1; min-width: 0; font: inherit; font-size: 13px; color: #F3EDE6; background: transparent; border: 0; outline: 0; padding: 6px 4px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 0 24px 48px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8A817A">
+    <span>real moment · nudleduck · oct 16 · 5:40:12 into the stream · transcribed on a MacBook as it aired</span>
+  </div>
+
+  <section id="how" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 48px 24px; display: flex; flex-direction: column; gap: 28px">
+    <h2 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.04em">If chatting were a professional <span style="color: #FF4A2B">e-sport</span>.</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px">
+      <div style="flex: 1 1 280px; min-width: 0; border: 1px solid #2A2522; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+        <svg width="36" height="36" viewBox="0 0 64 64" fill="none" stroke="#F3EDE6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30 H16 L23 8 L30 38 L35 26 H58" stroke="#FF4A2B"></path><path d="M6 44 H48"></path><path d="M6 58 H34"></path></svg>
+        <h3 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">The stream, as text</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A89F97">Voices are transcribed on your Mac as they happen and written into the feed with the speaker's name, collab guests included. Click any line to replay the audio behind it.</p>
+      </div>
+      <div style="flex: 1 1 280px; min-width: 0; border: 1px solid #2A2522; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+        <svg width="36" height="36" viewBox="0 0 64 64" fill="none" stroke="#F3EDE6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16 H58"></path><path d="M6 32 H44" stroke="#FF4A2B"></path><path d="M6 48 H52"></path></svg>
+        <h3 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">Every chat, one feed</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A89F97">Follow ten channels, read one feed. Each message wears its channel. Reply into the right chat from a dropdown. No tab juggling, no missed moments.</p>
+      </div>
+      <div style="flex: 1 1 280px; min-width: 0; border: 1px solid #2A2522; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+        <svg width="36" height="36" viewBox="0 0 64 64" fill="none" stroke="#F3EDE6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="20" height="20" rx="4"></rect><rect x="36" y="8" width="20" height="20" rx="4" stroke="#FF4A2B"></rect><rect x="8" y="36" width="20" height="20" rx="4"></rect><rect x="36" y="36" width="20" height="20" rx="4"></rect></svg>
+        <h3 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">Bundles</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A89F97">Drag channels onto each other to make a bundle, then switch between bundles like servers. League night, cozy, news, whatever your evenings look like.</p>
+      </div>
+    </div>
+    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #8A817A; max-width: 720px">fever plays each stream in Twitch's own player inside the app, so you count as a viewer and ads run like anywhere else. Transcripts and replay clips stay on your machine; nothing is uploaded to us.</p>
+  </section>
+
+  <section style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 24px 24px 48px">
+    <div style="background: #F3EDE6; color: #0E0C0B; border-radius: 26px; padding: 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px; align-items: center">
+      <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #6B625B">Who said that</div>
+        <h2 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.04em; line-height: 1.02">Collabs read like a script.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #4A423D">Speaker matching runs next to transcription, so a four-person call lands as four named voices. Correct a name once and the app remembers the voice.</p>
+      </div>
+      <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 1.4">
+        <div style="display: flex; gap: 10px; align-items: baseline; padding: 10px 14px; background: #FFFFFF; border-radius: 12px"><span style="font-weight: 700; flex: none">nudleduck</span><span style="color: #2A2522">oh wait, let me listen to your thingy</span></div>
+        <div style="display: flex; gap: 10px; align-items: baseline; padding: 10px 14px; background: #FFFFFF; border-radius: 12px"><span style="font-weight: 700; flex: none">Axiom</span><span style="color: #2A2522">testing one two three, this is Axiom demoing the voice changer</span><span style="margin-left: auto; flex: none; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #6B625B">was speaker 2</span></div>
+        <div style="display: flex; gap: 10px; align-items: baseline; padding: 10px 14px; background: #FFFFFF; border-radius: 12px"><span style="font-weight: 700; flex: none">nudleduck</span><span style="color: #2A2522">wait, do you guys think that sounds like me? no way</span></div>
+        <div style="display: flex; gap: 10px; align-items: baseline; padding: 6px 14px 0; font-size: 13px; color: #6B625B"><span style="font-weight: 700; color: #B98BFF">Tears_0f_sin</span><span>why were there 2 nudles talking at the same time</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 48px 24px; display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <h2 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.04em">Feeling feverish? Did you overdose on chat?</h2>
+      <p style="margin: 0; font-size: 18px; color: #A89F97">Buy the desktop app once. The phone comes with it.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch">
+      <div style="flex: 1 1 280px; min-width: 0; background: #F3EDE6; color: #0E0C0B; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+        <div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #6B625B">Desktop</div>
+        <div style="font-size: 48px; font-weight: 700; letter-spacing: -0.05em; line-height: 1">$29<span style="font-size: 18px; font-weight: 500; color: #6B625B; letter-spacing: 0"> one-time</span></div>
+        <ul style="margin: 0; padding: 0 0 0 18px; font-size: 16px; line-height: 1.6; color: #3A332E">
+          <li>14-day free trial of voice, chat free forever</li>
+          <li>Everything runs on your Mac</li>
+          <li>Live transcription with speaker names</li>
+          <li>Replay any line</li>
+          <li>Unlimited channels and bundles</li>
+          <li>Phone app pairs free</li>
+        </ul>
+        <!-- launch: <a href="CHECKOUT_URL" class="lemonsqueezy-button" …>Buy for Mac</a> -->
+        <span style="margin-top: auto; text-align: center; color: #6B625B; border: 1px solid #C9C0B8; padding: 13px 20px; border-radius: 999px; font-weight: 700; font-size: 16px">Available soon</span>
+      </div>
+      <div style="flex: 1 1 280px; min-width: 0; border: 1px solid #2A2522; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+        <div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A918A">Phone, paired</div>
+        <div style="font-size: 48px; font-weight: 700; letter-spacing: -0.05em; line-height: 1">Free<span style="font-size: 18px; font-weight: 500; color: #A89F97; letter-spacing: 0"> with desktop</span></div>
+        <ul style="margin: 0; padding: 0 0 0 18px; font-size: 16px; line-height: 1.6; color: #C9C0B8">
+          <li>iOS and Android</li>
+          <li>Your Mac does the work, your phone shows the feed</li>
+          <li>Same bundles, same replies, same replay</li>
+          <li>No account with us needed</li>
+        </ul>
+        <span style="margin-top: auto; text-align: center; color: #9A918A; border: 1px solid #2A2522; padding: 13px 20px; border-radius: 999px; font-weight: 500; font-size: 16px">Comes with the Mac app</span>
+      </div>
+      <div style="flex: 1 1 280px; min-width: 0; border: 1px solid #2A2522; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+        <div style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #9A918A">Phone, cloud · coming later</div>
+        <div style="font-size: 48px; font-weight: 700; letter-spacing: -0.05em; line-height: 1">$4<span style="font-size: 18px; font-weight: 500; color: #A89F97; letter-spacing: 0"> / month</span></div>
+        <ul style="margin: 0; padding: 0 0 0 18px; font-size: 16px; line-height: 1.6; color: #C9C0B8">
+          <li>No desktop required</li>
+          <li>Transcription on our servers</li>
+          <li>Nothing stored after your session</li>
+          <li>About $30 a year</li>
+        </ul>
+        <a href="mailto:hello@fever.stream?subject=fever%20cloud%20waitlist" style="margin-top: auto; text-decoration: none; text-align: center; color: #F3EDE6; border: 1px solid #2A2522; padding: 13px 20px; border-radius: 999px; font-weight: 500; font-size: 16px">Join the waitlist</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 48px 24px; display: flex; flex-wrap: wrap; gap: 32px">
+    <h2 style="margin: 0; flex: 1 1 280px; font-size: 36px; font-weight: 700; letter-spacing: -0.04em">Questions</h2>
+    <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px; font-size: 16px; line-height: 1.5">
+      <div><div style="font-weight: 700; margin-bottom: 4px">Is this allowed by Twitch?</div><div style="color: #A89F97">Each transcribed stream plays in Twitch's official embedded player inside fever, so you count as a viewer and ads play; fever doesn't block ads, re-host video, or store anything server-side. You log in with Twitch's own device flow and chat as yourself.</div></div>
+      <div><div style="font-weight: 700; margin-bottom: 4px">How accurate is the transcript?</div><div style="color: #A89F97">It uses the same Whisper model family as most live-captioning tools, running locally on Apple Silicon. Names come from voice matching, so collabs read like a script.</div></div>
+      <div><div style="font-weight: 700; margin-bottom: 4px">How long can I replay a line?</div><div style="color: #A89F97">For as long as the app is open. Clips live in memory on your machine and are gone when you quit. Nothing is uploaded.</div></div>
+      <div><div style="font-weight: 700; margin-bottom: 4px">What about Windows?</div><div style="color: #A89F97">Mac first because that's where the engine runs best. Windows and Linux follow, with a lighter model.</div></div>
+    </div>
+  </section>
+
+  <footer id="download" style="border-top: 1px solid #2A2522; margin-top: 24px">
+    <div style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 14px; color: #9A918A">
+      <span style="display: flex; align-items: center; gap: 10px">
+        <svg width="20" height="20" viewBox="0 0 64 64" fill="none" stroke="#F3EDE6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30 H16 L23 8 L30 38 L35 26 H58" stroke="#FF4A2B"></path><path d="M6 44 H48"></path><path d="M6 58 H34"></path></svg>
+        <span style="color: #F3EDE6; font-weight: 700">fever<span style="color: #FF4A2B">.</span><span style="font-weight: 500; color: #A89F97">stream</span></span>
+      </span>
+      <span>Not affiliated with Twitch.</span>
+      <span style="display: flex; gap: 20px"><a href="privacy.html" style="text-decoration: none; color: #9A918A">Privacy</a><a href="terms.html" style="text-decoration: none; color: #9A918A">Terms</a><a href="mailto:hello@fever.stream" style="text-decoration: none; color: #9A918A">Contact</a></span>
+    </div>
+  </footer>
+</div>
+<!-- launch: <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script> -->
+</body>
+</html>
