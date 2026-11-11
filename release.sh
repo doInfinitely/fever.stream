@@ -10,12 +10,14 @@ DMG=packaging/fever.dmg
 [ -f "$DMG" ] || { echo "no $DMG; run packaging/build_mac.sh first"; exit 1; }
 xcrun stapler validate "$DMG" >/dev/null || { echo "$DMG is not notarized/stapled"; exit 1; }
 ASSET="fever-$VER.dmg"
+# gh uses the local file name as the asset name ("path#label" only sets a display label), so upload a versioned copy.
+cp "$DMG" "packaging/$ASSET"; trap 'rm -f "packaging/$ASSET"' EXIT
 if gh release view "v$VER" -R "$REPO" >/dev/null 2>&1; then
   echo "▸ v$VER exists; replacing asset"
-  gh release upload "v$VER" -R "$REPO" "$DMG#$ASSET" --clobber
+  gh release upload "v$VER" -R "$REPO" "packaging/$ASSET" --clobber
 else
   echo "▸ creating release v$VER"
-  gh release create "v$VER" -R "$REPO" "$DMG#$ASSET" --title "fever $VER" --notes "${NOTES:-fever for Mac $VER}"
+  gh release create "v$VER" -R "$REPO" "packaging/$ASSET" --title "fever $VER" --notes "${NOTES:-fever for Mac $VER}"
 fi
 URL="https://github.com/$REPO/releases/download/v$VER/$ASSET"
 python3 - "$VER" "$URL" "$NOTES" <<'PY'
